@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$page-width: 1920px;
+$container-1-size: 1170px;
+
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 200;
+    src: url("fonts/Montserrat/Montserrat-ExtraLight.woff2") format("woff2"), url("fonts/Montserrat/Montserrat-ExtraLight.woff") format("woff"), url("fonts/Montserrat/Montserrat-ExtraLight.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 300;
+    src: url("fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("fonts/Montserrat/Montserrat-Light.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url("fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 400;
+    src: url("fonts/Raleway/Raleway-Regular.woff2") format("woff2"), url("fonts/Raleway/Raleway-Regular.woff") format("woff"), url("fonts/Raleway/Raleway-Medium.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 500;
+    src: url("fonts/Raleway/Raleway-Medium.woff2") format("woff2"), url("/fonts/Raleway/Raleway-Regular.woff") format("woff"), url("/fonts/Raleway/Raleway-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 700;
+    src: url("fonts/Raleway/Raleway-Bold.woff2") format("woff2"), url("fonts/Raleway/Raleway-Bold.woff") format("woff"), url("fonts/Raleway/Raleway-Bold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 800;
+    src: url("fonts/Raleway/Raleway-ExtraBold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url("fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("fonts/Roboto/Roboto-Regular.woff") format("woff"), url("fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+}
+
+
+.container {
+    width: 1230px;
+    margin: 0 auto;
+}
+
+.small-container {
+    width: 720px;
+    margin: 0 auto;
+}
+
+.background {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+            background-repeat: no-repeat;
+            max-height: 1024px;
+    
+    margin: 0 auto;
+    }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px; 
+    margin: 0 auto;
+    padding-top: 40px;
+
+    &-logo {
+            display: flex;
+            
+        }
+        &-title {
+            color: #ffffff;
+               font-family: Raleway;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: -1.36px;
+    padding-top: 15px;
+        }
+
+        &-links {
+            display: flex;
+        }
+
+        &-list {
+            list-style: none;
+            display: flex;
+    justify-content: space-between;
+    
+    
+        }
+
+        &-item {
+            padding-right: 30px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 22px;
+        }
+
+        &-icons {
+            margin-left: 63px;
+            
+        }
+
+        &-link:link {
+            text-decoration: none;
+    color: white;
+}
+
+&-link:visited {
+    text-decoration: none;
+    color: white;
+}
+
+&-link:hover {
+    text-decoration: none;
+    color: #c7b299;
+}
+
+&-link:active {
+    text-decoration: none;
+    color: #c7b299;
+}
+        
+}
+
+.slider {
+    height: 1024px;
+    
+    
+&-wrapper {
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+    align-items: center;
+    align-content: center;
+}
+
+.text-wrapper {
+    text-align: center;
+
+}
+
+.text-design {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 14px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.text-portfolio {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 52px;
+    font-weight: 400;
+    padding-bottom: 19px;
+}
+
+.text-text {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-bottom: 52px;
+    max-width: 562px;
+}
+
+.text-button {
+    color: #ffffff;
+    font-family: 'Raleway';
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    /* Style for "button" */
+    width: 170px;
+    height: 53px;
+    box-shadow: inset 0 -3px 0 #736357;
+    border-radius: 3px;
+    background-color: #998675;
+}
+
+    .left-arrow {
+        width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-right: transparent;
+    border-top: transparent;
+    border-left: 2px solid #c7b299;
+    border-bottom: 2px solid #c7b299;
+    opacity: 0.5;
+    transform: rotate(45deg);
+    
+
+     }
+
+    .right-arrow {
+        width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-right: 2px solid #c7b299;
+    border-top: 2px solid #c7b299;
+    opacity: 0.5;
+    border-left: transparent;
+    border-bottom: transparent;
+    transform: rotate(45deg);
+    
+    }
+
+    .left-arrow:hover {
+        opacity: none;
+    }
+
+    .righ-arrow:hover {
+        opacity: none;
+    }
+}
+
+.sliders {
+    display: block;
+text-align: center;
+}
+
+.slide {
+    border-radius: 50px;
+    margin-right: 9px;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+background-color: #ffffff;
+border: 0 transparent;
+opacity: 0.5;
+}
+
+.slide:active {
+    border-radius: 50px;
+    margin-right: 9px;
+    width: 15px;
+    height: 15px;
+        background-color: transparent;
+    border: 2px solid #d3c1ad;
+ }
+
+.services {
+    padding-top: 90px;
+    background-color: white;
+
+    &-wrapper {
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    &-segment {
+        display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    }
+    
+    &-segment:hover {
+        color: #c7b299;
+    }
+
+    &-title {
+        color: #555555;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 30px 0 24px 0;
+    }
+
+    &-text {
+        color: #8c8c8c;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+    }
+}
+
+.Waxom-is {
+
+    &-wrapper {
+    max-width: 770px;
+    
+    }
+
+
+    &-title {
+        color: #555555;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 83px;
+    
+    }
+
+    &-text {
+        color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    padding-bottom: 40px;
+    max-width: 757px;
+    margin: 0 auto;
+    
+    
+    }
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f4f5f8;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    
+    &-title {
+    color: #c7b299;
+}
+    &-big {
+        padding-top: 48px;
+    font-family: Raleway;
+    font-size: 28px;
+    font-weight: 400;
+    color: #ffffff;
+    }
+
+    &-small {
+        color: #615855;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 49px;
+    }
+
+    &-button {
+    padding: 19px 29px 20px 28px;
+    box-shadow: inset 0 -3px 0 #736357;
+    border-radius: 3px;
+    background-color: #998675;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    }
+}
+
+.Latest-Projects {
+            background-color: #fbfaf8;
+        
+
+        &-Title {
+            color: #555555;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 83px;
+        }
+
+        &-Text {color: #8c8c8c;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 28px;
+            text-align: center;
+            padding-bottom: 40px;}
+
+
+    }
+
+
+
